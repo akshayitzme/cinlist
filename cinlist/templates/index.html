@@ -1,1 +1,27 @@
 {% extends 'layouts/main.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<div class="bg-overlay">
+
+    <div class="d-flex w-100 align-items-center justify-content-center" style="height: 75vh">
+        <div class="text-center text-light">
+            <h1 class="fw-bold">List your favorite movies, series, shows and more</h1>
+            <div class="pt-5">
+                <div class="text-light h4">
+                    create your account to get started
+                </div>
+            </div>
+            <a href="/signup">
+                <button class="mt-4 btn-register">
+                    <div class="d-inline-flex">
+                        <i class="ri-login-box-line"></i>
+                        &nbsp;&nbsp;Sign Up
+                    </div>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
