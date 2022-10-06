@@ -2,7 +2,7 @@
 name = "cinlist"
 version = "0.1.0"
 description = ""
-authors = ["Akshay akshayitzme.official@gmail.com"]
+authors = ["Akshay <akshayitzme.official@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
