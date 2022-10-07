@@ -1,0 +1,32 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<div class="bg-overlay">
+
+   
+    <div class="container mx-auto pt-5">
+        <div class="row">
+            <div class="col-12 col-xs-12 col-md-6 col-lg-6 mx-auto">
+                <div class="bg-2 px-3 py-4 mx-auto text-center">
+                    <div class="text-light">
+                        <h3>Sign Up</h3>
+                    </div>
+
+                    <div class="pt-2">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            {{ form.username }}
+                            {{ form.email }}
+                            {{ form.password1 }}
+                            {{ form.password2 }}
+                            <button type="submit" class="mt-4 btn w-75 py-2 btn-primary">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    {% endblock %}
