@@ -28,23 +28,4 @@
         </div>
     </div>
 </div>
-
-{% if messages %}
-{% for message in messages %}
-<div class="pt-5 position-fixed top-0 end-0">
-    {% if message.tags == "success" %}
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>✅ {{ message }}</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    {% endif %}
-    {% if message.tags == "error" %}
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>⚠️ {{ message }}</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    {% endif %}
-</div>
-{% endfor %}
-{% endif %}
 {% endblock %}

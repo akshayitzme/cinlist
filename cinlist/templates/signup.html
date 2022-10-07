@@ -29,24 +29,4 @@
 </div>
 
 
-{% if form.errors %}
-{% for field in form %}
-{% if field.errors %}
-<div class="pt-5 position-fixed top-0 end-0">
-<div class="alert alert-danger alert-dismissible fade show" role="alert">
-    <strong>{{field.errors}}</strong>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-{% endif %}
-{% endfor %}
-
-</div>
-{% endif %}
-
-    {% endblock %}
-
-    {% block css %}
-    .errorlist{
-        display: flex;
-    }
     {% endblock %}
