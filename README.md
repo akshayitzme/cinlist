@@ -10,7 +10,10 @@
 ## Installation
 
 **Method:1 Using Poetry**
-``` pip install poetry```
+```bash 
+pip install poetry
+```
+
 ```bash
 poetry install
 ```
