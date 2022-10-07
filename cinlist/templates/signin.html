@@ -1,0 +1,50 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<div class="bg-overlay">
+
+    <div class="container mx-auto pt-5">
+        <div class="row">
+            <div class="col-12 col-xs-12 col-md-6 col-lg-6 mx-auto">
+                <div class="bg-2 px-3 py-5 mx-auto">
+                    <div class="text-light text-center">
+                        <h3>Sign In</h3>
+                    </div>
+
+                    <div class="pt-2 text-center">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="text" class="mt-3 input w-75 p-3" name="username"
+                            placeholder="username">
+                            <input type="password" class="mt-3 input w-75 p-3" name="password" placeholder="Password">
+                            <button class="mt-4 btn w-75 py-2 btn-primary">Sign In</button>
+                        </form>
+                            <div class="pt-3 text-center">
+                            <a href="/forgot" class="text-decoration-none">Forgot Password ?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if messages %}
+{% for message in messages %}
+<div class="pt-5 position-fixed top-0 end-0">
+    {% if message.tags == "success" %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>✅ {{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+    {% if message.tags == "error" %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>⚠️ {{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}
