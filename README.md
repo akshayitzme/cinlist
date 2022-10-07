@@ -7,6 +7,8 @@
 ![Forks](https://img.shields.io/github/forks/akshayitzme/cinlist?logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/akshayitzme/cinlist?logo=appveyor)
 
+**How to Contribute ? :** _Check out Existing issues / create new  / wait till a issue is created_
+
 ## Installation
 
 **Method:1 Using Poetry**
