@@ -18,7 +18,9 @@ class SignUpForm(UserCreationForm):
         required=True,
         widget=forms.TextInput(
             attrs={
-                
+                'class': 'mt-3 input w-50 p-2',
+                'type': 'email',
+                'placeholder': 'Email'
             }),
     )
     password1 = forms.CharField(
