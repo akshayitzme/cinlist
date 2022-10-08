@@ -1,3 +1,4 @@
+from logging import PlaceHolder
 from django import forms
 from django.contrib.auth.models import User
 from .models import List, Movies, Series
@@ -8,7 +9,8 @@ class SignUpForm(UserCreationForm):
         max_length=100,
         required=True,
         widget=forms.TextInput(attrs={
-            
+            'placeHolder': 'Username',
+            'class': 'mt-3 input w-50 p-2'
         }),
     )
     email = forms.EmailField(
