@@ -7,7 +7,7 @@
 ![Forks](https://img.shields.io/github/forks/akshayitzme/cinlist?logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/akshayitzme/cinlist?logo=appveyor)
 
-**How to Contribute ? :** _Check out Existing issues / create new  / wait till a issue is created_
+**How to Contribute ? :** _Check out Existing issues / create new  / wait till a issue is created (updated everyday!)_
 
 ![image](https://user-images.githubusercontent.com/60477442/194534094-5d00a665-7bf9-4f97-82d2-95ec15158c1a.png)
 
