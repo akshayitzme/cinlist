@@ -10,7 +10,7 @@ python = "^3.10"
 asgiref = "3.5.2"
 Django = "4.1.13"
 gunicorn = "23.0.0"
-sqlparse = "0.5.0"
+sqlparse = "0.5.4"
 whitenoise = "6.2.0"
 
 
